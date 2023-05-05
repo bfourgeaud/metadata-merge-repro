@@ -18,7 +18,11 @@ export async function generateMetadata(props: ChildPageProps, parent?: Resolving
     }
   }
 
-  /* Working */
+  /**
+   * Working solution :
+   * - Redefine manually images properties
+   * - Should not have to be the case. images from parent should be retrievable
+   *  */
   return {
     title: "Child",
     openGraph: {
